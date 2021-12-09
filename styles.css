@@ -272,6 +272,30 @@ section a {
 }
 
 /* Media Queries */
+@media (max-width: 768px) {
+  .navbar .navbar-nav-left,
+  .navbar .navbar-nav-right {
+    display: none;
+  }
+
+  .navbar-brand img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .grid-col-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-reversed :first-child {
+    order: 0;
+  }
+
+  .footer {
+    text-align: center;
+  }
+}
+
 @media (max-width: 960px) {
   .text-xl {
     font-size: 30px;
