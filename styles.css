@@ -214,6 +214,39 @@ section a {
   margin: 0 5px;
 }
 
+/* Hamburger Menu */
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  background: none;
+  border: none;
+  z-index: 10;
+  transition: all 0.25s;
+}
+
+.hamburger-top,
+.hambuger-middle,
+.hambuger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: #000;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hambuger-middle {
+  transform: translateY(7px);
+}
+
+.hambuger-bottom {
+  transform: translateY(14px);
+}
+
 /* Box */
 .box {
   margin-bottom: 30px;
