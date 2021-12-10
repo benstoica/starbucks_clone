@@ -40,6 +40,14 @@ section a {
   color: #fff;
 }
 
+.hidden {
+  transform: translateX(100%);
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
 /* Buttons */
 .btn {
   cursor: pointer;
@@ -261,13 +269,14 @@ section a {
 /* Mobile Menu */
 .mobile-menu {
   position: fixed;
-  top: 95px;
+  top: 85px;
   right: 0;
   background-color: #fff;
   color: #000;
   width: 90%;
   height: 100%;
   padding: 30px;
+  transition: all 0.3s;
   box-shadow: inset 0 4px 3px -3px rgb(0 0 0 / 10%),
     inset 0 4px 2px -2px rgb(0 0 0 / 7%);
 }
